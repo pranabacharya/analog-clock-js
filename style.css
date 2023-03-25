@@ -10,11 +10,11 @@
 }
 #hour,
 #minute,
-#second {
+#second,
+#millisecond {
   position: absolute;
   transform-origin: bottom;
   z-index: 100;
-  transition: transform 100ms linear;
 }
 
 #hour {
@@ -40,6 +40,15 @@
   left: 49.55%;
   border-radius: 15px;
   background-color: royalblue;
+}
+#millisecond {
+  top: 8%;
+  width: 0.2%;
+  height: 42%;
+  left: 49.9%;
+  border-radius: 15px;
+  background-color: rgb(0, 0, 0);
+  display: none;
 }
 #centerCircle {
   position: absolute;
