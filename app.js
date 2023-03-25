@@ -47,9 +47,8 @@ setInterval(() => {
   let s = d.getSeconds();
   let ms = d.getMilliseconds();
 
-  let am = h > 12 ? false : true;
-  let titleHour = h > 12 ? h - 12 : h < 10 ? "0" + h : h;
-
+  let am = h >= 12 ? false : true;
+  let titleHour = h > 12 ? h - 12 : h < 10 ? "0" + h : h == 00 ? (h = 12) : h;
   let time = `Clock-${titleHour}:${m < 10 ? "0" + m : m}:${
     s < 10 ? "0" + s : s
   } ${am ? "AM" : "PM"}`;
