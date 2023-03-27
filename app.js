@@ -9,7 +9,7 @@ function updateDayTime() {
   let d = new Date();
   const WEEK_DAYS = [
     "Sunday",
-    "Mondays",
+    "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
